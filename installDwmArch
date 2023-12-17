@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# need for DWM in Void
+yes | sudo xbps-install -S xorg xinit make base-devel libX11-devel libXft-devel libXinerama-devel vim
+
+# yes | sudo xbps-install -S freetype-devel fontcongig-devel
+
+# yes | sudo xbps-install -S lxappearance
+
+# Packages needed dwm after installation
+# yes | sudo xbps-install -S numlockx dunst libnotify-bin policykit-1-gnome scrot 
+
+yes | sudo xbps-install -S firefox  htop caffeine-ng nitrogen rofi 
+
+# yes | sudo xbps-install -S mousepad geany ranger nnn wget picom
+
+# Install fonts
+# yes | sudo xbpx-install -S fonts-font-awesome fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
+
+# EXA installation
+# replace ls command in .bashrc file with line below
+# alias ls='exa -al --long --header --color=always --group-directories-first' 
+# sudo xbpx-install -S exa
+
+# bpyton galculator youtube-dl-gui subleme geany flameshot okular peel google-chrome waterfox thunderbird
+# audacity brasero handbrake k3b mvp vlc
+# libreoffice pdfarranger Xornal++ redshift
+
+
+# XSessions and dwm.desktop
+if [[ ! -d /usr/share/xsessions ]]; then
+    sudo mkdir /usr/share/xsessions
+fi
+
+cat > ./temp << "EOF"
+[Desktop Entry]
+Encoding=UTF-8
+Name=dwm
+Comment=Dynamic window manager
+Exec=dwm
+Icon=dwm
+Type=XSession
+EOF
+sudo cp ./temp /usr/share/xsessions/dwm.desktop;rm ./temp
+
+
+# Creating directories
+mkdir ~/.config/suckless
+
+
+# Move install directory, make, and install
+cd ~/.config/suckless
+tools=( "dwm" "dmenu" "st" "slstatus" "slock" "tabbed" )
+for tool in ${tools[@]}
+do 
+	git clone git://git.suckless.org/$tool
+	cd ~/.config/suckless/$tool;make;sudo make clean install;cd ..
+done
+
+
+
+
+
+printf "\e[1;32mDone! you can now reboot.\e[0m\n"
