@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # need for DWM in Void
-yes | sudo pacman -S xorg xinit make base-devel libX11-devel libXft-devel libXinerama-devel vim
+yes | sudo pacman -S xorg xinit make base-devel libX11-devel libXft-devel libXinerama-devel vim curl
 
 # yes | sudo pacman -S freetype-devel fontcongig-devel
 
