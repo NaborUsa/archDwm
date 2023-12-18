@@ -11,9 +11,9 @@
 # alias ls='exa -al --long --header --color=always --group-directories-first' 
 # sudo xbpx-install -S exa
 
-# bpyton galculator youtube-dl-gui subleme geany flameshot okular peel google-chrome waterfox thunderbird
+# bpyton galculator youtube-dl-gui subleme geany flameshot okular peek google-chrome waterfox thunderbird
 # audacity brasero handbrake k3b mvp vlc
-# libreoffice pdfarranger Xornal++ redshift
+# libreoffice pdfarranger Xornal++ redshift onlyoffice
 
 okular
 mpv 
