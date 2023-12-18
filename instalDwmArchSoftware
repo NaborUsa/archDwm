@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-# yes | sudo pacman -S mousepad geany ranger nnn fff
+ yes | sudo pacman -S mousepad geany ranger nnn fff
 
-# yes | sudo pacman -S okular mpv vlc
+ yes | sudo pacman -S okular mpv vlc flameshot glances neofetch
 
 # Install fonts
 # yes | sudo pacman -S fonts-font-awesome fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
@@ -13,8 +13,8 @@
 # alias ls='exa -al --long --header --color=always --group-directories-first' 
 # sudo xbpx-install -S exa
 
-# bpyton galculator youtube-dl-gui subleme geany flameshot okular peek google-chrome waterfox thunderbird
-# audacity brasero handbrake k3b mvp vlc
+# bpyton galculator youtube-dl-gui subleme geany  okular peek google-chrome waterfox thunderbird
+# audacity brasero handbrake k3b 
 # libreoffice pdfarranger Xornal++ redshift onlyoffice
 
 
@@ -50,7 +50,7 @@ okular
     btop++
     musikcube
     googler
-    neofetch
+    
     wttr
     ncdu (Disk Analyser)
     newsboat
