@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # need for DWM in Void
-yes | sudo pacman -S xorg xinit make base-devel libX11-devel libXft-devel libXinerama-devel vim curl
+# yes | sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xsetroot  
 
 # yes | sudo pacman -S freetype-devel fontcongig-devel
 
@@ -10,7 +10,7 @@ yes | sudo pacman -S xorg xinit make base-devel libX11-devel libXft-devel libXin
 # Packages needed dwm after installation
 # yes | sudo xbps-install -S numlockx dunst libnotify-bin policykit-1-gnome scrot 
 
-yes | sudo pacman -S firefox  htop caffeine-ng nitrogen rofi 
+yes | sudo pacman -S firefox  htop caffeine-ng nitrogen rofi vim curl
 
 # yes | sudo pacman -S mousepad geany ranger nnn wget picom
 
@@ -25,6 +25,26 @@ yes | sudo pacman -S firefox  htop caffeine-ng nitrogen rofi
 # bpyton galculator youtube-dl-gui subleme geany flameshot okular peel google-chrome waterfox thunderbird
 # audacity brasero handbrake k3b mvp vlc
 # libreoffice pdfarranger Xornal++ redshift
+
+
+#  ###########################################################################################################
+# Install Lightdm Console Display Manager
+# sudo apt install -y lightdm lightdm-gtk-greeter-settings slick-greeter
+# sudo systemctl enable lightdm
+# echo 'greeter-session=slick-greeter' >>  sudo tee -a /etc/lightdm/lightdm.conf
+# echo 'greeter-hide-user=false' >>  sudo tee -a /etc/lightdm/lightdm.conf
+
+# Ly Console Manager
+# Needed packages
+# sudo apt install -y libpam0g-dev libxcb-xkb-dev
+# cd 
+# git clone --recurse-submodules https://github.com/fairyglade/ly
+# cd ly
+# make
+# sudo make install installsystemd
+# sudo systemctl enable ly.service
+
+#  #################################################################################################################
 
 
 # XSessions and dwm.desktop
