@@ -12,15 +12,15 @@ yes | sudo pacman -S xorg xinit make base-devel libX11-devel libXft-devel libXin
 
 yes | sudo pacman -S firefox  htop caffeine-ng nitrogen rofi 
 
-# yes | sudo xbps-install -S mousepad geany ranger nnn wget picom
+# yes | sudo pacman -S mousepad geany ranger nnn wget picom
 
 # Install fonts
-# yes | sudo xbpx-install -S fonts-font-awesome fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
+# yes | sudo pacman -S fonts-font-awesome fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
 
 # EXA installation
 # replace ls command in .bashrc file with line below
 # alias ls='exa -al --long --header --color=always --group-directories-first' 
-# sudo xbpx-install -S exa
+# sudo pacman -S exa
 
 # bpyton galculator youtube-dl-gui subleme geany flameshot okular peel google-chrome waterfox thunderbird
 # audacity brasero handbrake k3b mvp vlc
