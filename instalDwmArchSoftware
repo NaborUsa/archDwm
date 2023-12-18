@@ -1,10 +1,12 @@
 #!/bin/bash
 
 
-# yes | sudo xbps-install -S mousepad geany ranger nnn wget picom
+# yes | sudo pacman -S mousepad geany ranger nnn fff
+
+# yes | sudo pacman -S okular mpv vlc
 
 # Install fonts
-# yes | sudo xbpx-install -S fonts-font-awesome fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
+# yes | sudo pacman -S fonts-font-awesome fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
 
 # EXA installation
 # replace ls command in .bashrc file with line below
@@ -15,9 +17,9 @@
 # audacity brasero handbrake k3b mvp vlc
 # libreoffice pdfarranger Xornal++ redshift onlyoffice
 
-okular
-mpv 
-vlc
+
+ 
+wget picom
 moc
 googler
 glances
