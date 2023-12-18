@@ -18,7 +18,7 @@
 # libreoffice pdfarranger Xornal++ redshift onlyoffice
 
 
- 
+: << COMMENT 
 wget picom
 moc
 googler
@@ -244,7 +244,7 @@ https://itsfoss.com/best-daw-linux/
 
 https://itsfoss.com/essential-linux-applications/
 
-
+COMMENT
 
 
 
