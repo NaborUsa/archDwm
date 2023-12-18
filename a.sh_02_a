@@ -3,12 +3,11 @@
 if [[ ! -d /.local/share/ ]]; then
 
     sudo mkdir .local/share/dwm
-    echo 'hello, bash'
+
 fi
 
 if [[ ! -d /.local/share/dwm ]]; then
         
-    printf "yes"
     sudo touch autostart.sh
 fi
 
@@ -32,5 +31,5 @@ sudo cp ./temp .local/share/dwm/autostart.sh;rm ./temp
 
 
 
-
+echo 'Nabor'
 printf "\e[1;32mDone! you can now reboot.\e[0m\n"
