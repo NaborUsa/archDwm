@@ -1,14 +1,14 @@
 #!/bin/bash
 
-if [[ ! -d /.local/share/ ]]; then
+if [[ ! -d ~/.local/share/ ]]; then
 
-    sudo mkdir .local/share/ dwm
+    sudo mkdir ~/.local/share/dwm
 
 fi
 
-if [[ ! -d /.local/share/dwm ]]; then
+if [[ ! -d ~/.local/share/dwm ]]; then
         
-    sudo touch autostart.sh
+    sudo touch ~/.local/share/dwm/autostart.sh
 fi
 
 cat > ./temp << "EOF"
