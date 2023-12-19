@@ -18,7 +18,18 @@
 # libreoffice pdfarranger Xornal++ redshift onlyoffice
 
 
+
 : << COMMENT 
+https://github.com/sharkdp/bat
+https://github.com/ogham/exa
+https://github.com/nicolargo/glances
+https://github.com/allinurl/goaccess
+https://github.com/trapd00r/ls--
+https://github.com/lsd-rs/lsd
+https://github.com/tanrax/maza-ad-blocking
+https://github.com/nschloe/tiptop
+
+https://github.com/traviscross/mtr
 wget picom
 moc
 googler
