@@ -2,7 +2,7 @@
 
 if [[ ! -d /.local/share/ ]]; then
 
-    sudo mkdir .local/share/dwm
+    sudo mkdir .local/share/ dwm
 
 fi
 
