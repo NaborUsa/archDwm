@@ -23,7 +23,7 @@ nitrogen --restore &
 
 # sxhkd -c ~/.config/suckless/sxhkd/sxhkdrc
 EOF
-sudo cp ./temp .local/share/dwm/autostart.sh;rm ./temp
+sudo cp ./temp ~/.local/share/dwm/autostart.sh;rm ./temp
 
 
 
