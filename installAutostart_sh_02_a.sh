@@ -1,12 +1,12 @@
 #!/bin/bash
 
-if [[ ! -d ~/.local/share/ ]]; then
+if [[ ! -d ~/.local/share/dwm ]]; then
 
     sudo mkdir ~/.local/share/dwm
 
 fi
 
-if [[ ! -d ~/.local/share/dwm ]]; then
+if [[ ! -d ~/.local/share/dwm/autostart ]]; then
         
     sudo touch ~/.local/share/dwm/autostart.sh
 fi
